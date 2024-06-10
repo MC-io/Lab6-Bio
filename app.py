@@ -95,6 +95,7 @@ def get_clusters_at_rank(labels_, distance_matrix_, mode, result_file):
         f.write("-\t")
         for l in labels:
             f.write("{}\t".format(l))
+        f.write('\n')
         for i in range(len(labels)):
             f.write("{}\t".format(labels[i]))
             for j in range(len(labels)):
