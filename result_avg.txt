@@ -11,7 +11,7 @@ Matriz de Distancias Original:
 4.35 4.80 4.10 1.36 2.95 4.45 3.36 2.13 4.70 0.00 
 
 Paso 1:
-Se unen las secuencias B + E -> BE
+Se unen las secuencias B + E -> BE con el valor 0.03
 
 Matriz de Distancias despues del 1 paso:
 0.00 1.28 2.94 3.45 4.04 3.54 3.13 3.34 4.35 
@@ -25,7 +25,7 @@ Matriz de Distancias despues del 1 paso:
 4.35 3.87 4.10 1.36 4.45 3.36 2.13 4.70 0.00 
 
 Paso 2:
-Se unen las secuencias C + I -> CI
+Se unen las secuencias C + I -> CI con el valor 0.98
 
 Matriz de Distancias despues del 2 paso:
 0.00 1.28 3.14 3.45 4.04 3.54 3.13 4.35 
@@ -38,7 +38,7 @@ Matriz de Distancias despues del 2 paso:
 4.35 3.87 4.40 1.36 4.45 3.36 2.13 0.00 
 
 Paso 3:
-Se unen las secuencias D + G -> DG
+Se unen las secuencias D + G -> DG con el valor 1.07
 
 Matriz de Distancias despues del 3 paso:
 0.00 1.28 3.14 3.50 4.04 3.13 4.35 
@@ -50,7 +50,7 @@ Matriz de Distancias despues del 3 paso:
 4.35 3.87 4.40 2.36 4.45 2.13 0.00 
 
 Paso 4:
-Se unen las secuencias A + BE -> ABE
+Se unen las secuencias A + BE -> ABE con el valor 1.28
 
 Matriz de Distancias despues del 4 paso:
 0.00 2.67 3.68 2.81 2.70 4.11 
@@ -61,7 +61,7 @@ Matriz de Distancias despues del 4 paso:
 4.11 4.40 2.36 4.45 2.13 0.00 
 
 Paso 5:
-Se unen las secuencias CI + F -> CIF
+Se unen las secuencias CI + F -> CIF con el valor 2.05
 
 Matriz de Distancias despues del 5 paso:
 0.00 2.74 3.68 2.70 4.11 
@@ -71,7 +71,7 @@ Matriz de Distancias despues del 5 paso:
 4.11 4.42 2.36 2.13 0.00 
 
 Paso 6:
-Se unen las secuencias H + J -> HJ
+Se unen las secuencias H + J -> HJ con el valor 2.13
 
 Matriz de Distancias despues del 6 paso:
 0.00 2.74 3.68 3.41 
@@ -80,7 +80,7 @@ Matriz de Distancias despues del 6 paso:
 3.41 4.10 2.61 0.00 
 
 Paso 7:
-Se unen las secuencias DG + HJ -> DGHJ
+Se unen las secuencias DG + HJ -> DGHJ con el valor 2.61
 
 Matriz de Distancias despues del 7 paso:
 0.00 2.74 3.54 
@@ -88,14 +88,14 @@ Matriz de Distancias despues del 7 paso:
 3.54 3.87 0.00 
 
 Paso 8:
-Se unen las secuencias ABE + CIF -> ABECIF
+Se unen las secuencias ABE + CIF -> ABECIF con el valor 2.74
 
 Matriz de Distancias despues del 8 paso:
 0.00 3.71 
 3.71 0.00 
 
 Paso 9:
-Se unen las secuencias ABECIF + DGHJ -> ABECIFDGHJ
+Se unen las secuencias ABECIF + DGHJ -> ABECIFDGHJ con el valor 3.71
 
 Matriz de Distancias despues del 9 paso:
 0.00 

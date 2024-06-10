@@ -81,7 +81,7 @@ def get_clusters_at_rank(labels_, distance_matrix_, mode, result_file):
                 new_distance_matrix[j, i] = new_distance_matrix[i, j]
 
         f.write("Paso {}:\n".format(k + 1))
-        f.write("Se unen las secuencias {} + {} -> {}\n\n".format(labels[min_col], labels[min_row], new_labels[min_col]))
+        f.write("Se unen las secuencias {} + {} -> {} con el valor {:.2f}\n\n".format(labels[min_col], labels[min_row], new_labels[min_col], min_dist))
         labels = new_labels[:]
         distance_matrix = np.copy(new_distance_matrix)
 
