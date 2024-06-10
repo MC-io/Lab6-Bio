@@ -24,10 +24,16 @@ def get_clusters_at_rank(labels_, distance_matrix_, mode, result_file):
     original_labels = labels[:]
 
     f.write("Matriz de Distancias Original:\n")
+    f.write("-\t")
+    for l in labels:
+        f.write("{}\t".format(l))
+    f.write('\n')
     for i in range(len(labels)):
+        f.write("{}\t".format(labels[i]))
         for j in range(len(labels)):
-            f.write("{:.2f} ".format(distance_matrix[i, j]))
+            f.write("{:.2f}\t".format(distance_matrix[i, j]))
         f.write('\n')
+        
     f.write('\n')
 
     for k in range(len(original_labels) - 1):
@@ -86,9 +92,13 @@ def get_clusters_at_rank(labels_, distance_matrix_, mode, result_file):
         distance_matrix = np.copy(new_distance_matrix)
 
         f.write("Matriz de Distancias despues del {} paso:\n".format(k + 1))
+        f.write("-\t")
+        for l in labels:
+            f.write("{}\t".format(l))
         for i in range(len(labels)):
+            f.write("{}\t".format(labels[i]))
             for j in range(len(labels)):
-                f.write("{:.2f} ".format(distance_matrix[i, j]))
+                f.write("{:.2f}\t".format(distance_matrix[i, j]))
             f.write('\n')
         f.write('\n')
 
